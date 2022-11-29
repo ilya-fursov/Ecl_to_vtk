@@ -191,7 +191,7 @@ int main(int argc, char *argv[])
 
 		for (size_t i = 0; i < zcorn_size; i++)			// i <-> vertex
 			if (active[i/8])
-				fprintf(fout, "%g\t%g\t%g\n", cell_coor[i*3], cell_coor[i*3+1], cell_coor[i*3+2]);
+				fprintf(fout, "%-14.9g\t%-14.9g\t%-14.9g\n", cell_coor[i*3], cell_coor[i*3+1], cell_coor[i*3+2]);
 
 		fprintf(fout, "\nCELLS %zu %zu\n", count_act, count_act*9);
 		size_t count_1 = 0;
